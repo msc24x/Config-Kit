@@ -1,0 +1,138 @@
+<resources>
+    <string-array name="mssaCountStrings">
+        <item>Disable</item>
+        <item>MSAA-2</item>
+        <item>MSAA-4</item>
+        <item>MSAA-5</item>
+    </string-array>
+    <string-array name="mssaCountValues">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+
+
+    <string-array name="fxaaStrings">
+        <item>Disable</item>
+        <item>FXAA(Textures)</item>
+        <item>FXAA-2</item>
+        <item>FXAA-3</item>
+        <item>FXAA-4</item>
+        <item>FXAA-5</item>
+    </string-array>
+    <string-array name="fxaaValues">
+        <item>0.0</item>
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>5.0</item>
+    </string-array>
+
+
+
+
+    <string-array name="ShadowQStrings">
+        <item>Underfoot</item>
+        <item>Pixelated</item>
+        <item>Anti-Aliased(Pixelated)</item>
+        <item>Polygon</item>
+        <item>Anti-Aliased(Polygon)</item>
+        <item>Ultra-Realistic(Try at your own risk)</item>
+    </string-array>
+    <string-array name="ShadowQValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+
+
+    <string-array name="ReslStrings">
+        <item>960x450</item>
+        <item>1280x720</item>
+        <item>1440x810</item>
+        <item>1600x900</item>
+        <item>1920x1080</item>
+        <item>2560x1440</item>
+    </string-array>
+    <string-array name="ReslValues">
+        <item>0.75</item>
+        <item>1.0</item>
+        <item>1.125</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>2.0</item>
+    </string-array>
+
+
+
+    <string-array name="QualityStrings">
+        <item>Custom</item>
+        <item>Smooth</item>
+        <item>Balanced</item>
+        <item>HD</item>
+        <item>HDR</item>
+        <item>Ultra HD</item>
+    </string-array>
+    <string-array name="QualityValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="HDRstrings">
+        <item>Classic</item>
+        <item>Colorful</item>
+        <item>Realistic</item>
+        <item>Soft</item>
+    </string-array>
+    <string-array name="HDRvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="fps">
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60</item>
+    </string-array>
+
+
+    <string-array name="MaterialStrings">
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="MaterialValues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+
+</resources>

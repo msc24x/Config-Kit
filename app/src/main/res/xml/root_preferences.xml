@@ -1,0 +1,139 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="Configurations">
+
+    <ListPreference
+        app:entries="@array/QualityStrings"
+        app:entryValues="@array/QualityValues"
+        app:iconSpaceReserved="false"
+        app:key="UserQualitySetting"
+        app:summary="Some basic presets"
+        app:title="Quality"
+        app:useSimpleSummaryProvider="true" />
+    <ListPreference
+        app:entries="@array/ReslStrings"
+        app:entryValues="@array/ReslValues"
+        app:iconSpaceReserved="false"
+        app:key="MobileContentScaleFactor"
+        app:title="Resolution"
+        app:useSimpleSummaryProvider="true" />
+    <ListPreference
+        app:entries="@array/fxaaStrings"
+        app:entryValues="@array/fxaaValues"
+        app:iconSpaceReserved="false"
+        app:key="DefaultFeature.AntiAliasing"
+        app:title="FXAA"
+        app:useSimpleSummaryProvider="true" />
+    <!--ListPreference
+        app:entries="@array/fps"
+        app:entryValues="@array/fps"
+        app:iconSpaceReserved="false"
+        app:key="fps"
+        app:summary="Set target FPS"
+        app:title="Performance" />
+    <SwitchPreferenceCompat
+        app:iconSpaceReserved="false"
+        app:key="filtersLever"
+        app:title="Filters" />
+    < ListPreference
+        app:entries="@array/HDRstrings"
+        app:entryValues="@array/HDRvalues"
+        app:iconSpaceReserved="false"
+        app:key="HDRq"
+        app:title="HDR Quality"
+        app:useSimpleSummaryProvider="true" /-->
+    <SwitchPreferenceCompat
+        app:iconSpaceReserved="false"
+        app:key="UserMSAASetting"
+        app:summary="Turn On/Off"
+        app:title="MSAA" />
+
+    <ListPreference
+        app:entries="@array/MaterialStrings"
+        app:entryValues="@array/MaterialValues"
+        app:iconSpaceReserved="false"
+        app:key="MaterialQualityLevel"
+        app:title="Texture Quality"
+        app:useSimpleSummaryProvider="true" />
+    <PreferenceCategory
+        app:key="MobileMSAAC"
+        app:title="Mobile MSAA"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:key="MobileMSAA"
+            app:title="Mobile-MSAA"
+            app:iconSpaceReserved="false"
+            />
+        <ListPreference
+            app:key="MSAACount"
+            app:title="MSAA-Count"
+            app:dependency="MobileMSAA"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true"
+            app:entryValues="@array/mssaCountValues"
+            app:entries="@array/mssaCountStrings"
+            />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="ShadowsC"
+        app:title="Shadows">
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="UserShadowSwitch"
+            app:title="Shadows" />
+        <ListPreference
+            app:dependency="UserShadowSwitch"
+            app:iconSpaceReserved="false"
+            app:key="ShadowQuality"
+            app:showSeekBarValue="true"
+            app:useSimpleSummaryProvider="true"
+            app:title="Shadow Quality"
+            app:entryValues="@array/ShadowQValues"
+            app:entries="@array/ShadowQStrings"/>
+    </PreferenceCategory>
+
+    <!--SeekBarPreference
+        app:dependency="UserShadowSwitch"
+        android:max="100"
+        app:iconSpaceReserved="false"
+        app:key="shadowsDis"
+        app:min="10"
+        app:showSeekBarValue="true"
+        app:summary="Customize the distance of rendered shadows"
+        app:title="Distance" />
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory-->
+
+</PreferenceScreen>
